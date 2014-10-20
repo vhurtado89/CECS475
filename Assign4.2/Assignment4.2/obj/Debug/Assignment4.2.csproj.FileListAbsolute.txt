@@ -1,0 +1,15 @@
+c:\users\victor\documents\visual studio 2013\Projects\Assignment4.2\Assignment4.2\bin\Debug\Assignment4.2.exe.config
+c:\users\victor\documents\visual studio 2013\Projects\Assignment4.2\Assignment4.2\bin\Debug\Books.mdf
+c:\users\victor\documents\visual studio 2013\Projects\Assignment4.2\Assignment4.2\bin\Debug\Books_log.ldf
+c:\users\victor\documents\visual studio 2013\Projects\Assignment4.2\Assignment4.2\bin\Debug\Assignment4.2.exe
+c:\users\victor\documents\visual studio 2013\Projects\Assignment4.2\Assignment4.2\bin\Debug\Assignment4.2.pdb
+c:\users\victor\documents\visual studio 2013\Projects\Assignment4.2\Assignment4.2\bin\Debug\EntityFramework.dll
+c:\users\victor\documents\visual studio 2013\Projects\Assignment4.2\Assignment4.2\bin\Debug\EntityFramework.xml
+c:\users\victor\documents\visual studio 2013\Projects\Assignment4.2\Assignment4.2\obj\Debug\Assignment4.2.csprojResolveAssemblyReference.cache
+c:\users\victor\documents\visual studio 2013\Projects\Assignment4.2\Assignment4.2\obj\Debug\Assignment4._2.Properties.Resources.resources
+c:\users\victor\documents\visual studio 2013\Projects\Assignment4.2\Assignment4.2\obj\Debug\Assignment4.2.csproj.GenerateResource.Cache
+c:\users\victor\documents\visual studio 2013\Projects\Assignment4.2\Assignment4.2\obj\Debug\Assignment4.2.exe
+c:\users\victor\documents\visual studio 2013\Projects\Assignment4.2\Assignment4.2\obj\Debug\Assignment4.2.pdb
+C:\Users\Victor\Documents\Visual Studio 2013\Projects\Assignment4.2\Assignment4.2\obj\Debug\Assignment4._2.Form1.resources
+c:\Users\Victor\Documents\Visual Studio 2013\Projects\Assignment4.2\Assignment4.2\bin\Debug\BooksExamples.dll
+c:\Users\Victor\Documents\Visual Studio 2013\Projects\Assignment4.2\Assignment4.2\bin\Debug\BooksExamples.pdb

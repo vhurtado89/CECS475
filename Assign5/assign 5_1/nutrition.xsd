@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.deitel.com/nutrition" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="nutrition">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="productname" type="xs:string" />
+        <xs:element name="servingsize" type="xs:unsignedByte" />
+        <xs:element name="calories" type="xs:unsignedByte" />
+        <xs:element name="fatcalories" type="xs:unsignedByte" />
+        <xs:element name="gramsfat" type="xs:unsignedByte" />
+        <xs:element name="saturatedfat" type="xs:unsignedByte" />
+        <xs:element name="mgcholesterol" type="xs:unsignedByte" />
+        <xs:element name="sodium" type="xs:unsignedByte" />
+        <xs:element name="carbohydrates" type="xs:unsignedByte" />
+        <xs:element name="fiber" type="xs:unsignedByte" />
+        <xs:element name="sugar" type="xs:unsignedByte" />
+        <xs:element name="protein" type="xs:unsignedByte" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

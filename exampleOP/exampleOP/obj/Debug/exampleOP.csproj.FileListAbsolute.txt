@@ -1,0 +1,6 @@
+c:\users\victor\documents\visual studio 2013\Projects\exampleOP\exampleOP\bin\Debug\exampleOP.exe.config
+c:\users\victor\documents\visual studio 2013\Projects\exampleOP\exampleOP\bin\Debug\exampleOP.exe
+c:\users\victor\documents\visual studio 2013\Projects\exampleOP\exampleOP\bin\Debug\exampleOP.pdb
+c:\users\victor\documents\visual studio 2013\Projects\exampleOP\exampleOP\obj\Debug\exampleOP.csprojResolveAssemblyReference.cache
+c:\users\victor\documents\visual studio 2013\Projects\exampleOP\exampleOP\obj\Debug\exampleOP.exe
+c:\users\victor\documents\visual studio 2013\Projects\exampleOP\exampleOP\obj\Debug\exampleOP.pdb
