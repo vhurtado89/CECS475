@@ -1,4 +1,7 @@
-﻿<?xml version="1.0" ?>
+﻿<!-- Victor Hurtado -->
+<!-- CECS 475  -->
+<!-- Assignment 5-1 -->
+<?xml version="1.0" ?>
 <!-- nutrition.xml -->
 <!-- Nutritional information XML document -->
 <nutrition xmlns="http://www.deitel.com/nutrition">

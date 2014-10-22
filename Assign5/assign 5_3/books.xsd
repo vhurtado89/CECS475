@@ -1,66 +1,88 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="books" >
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="1" maxOccurs="unbounded" name="book" >
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="author">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="name">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="fname" type="xs:string" />
-                          <xs:element name="lname" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                    <xs:element name="contact">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="email">
-                            <xs:simpleType>
-                              <xs:restriction base="xs:string">
-                                <xs:pattern value="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
-                              </xs:restriction>
-                            </xs:simpleType>
-                          </xs:element>
-                          <xs:element name="phone" >
-                            <xs:simpleType>
-                              <xs:restriction base="xs:string">
-                                <xs:pattern value="[0-9]{3}-[0-9]{7}" />
-                              </xs:restriction>
-                            </xs:simpleType>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
-                  <xs:attribute name="auid" use="required">
-                    <xs:simpleType>
-                      <xs:restriction base="xs:string">
-                        <xs:pattern value="[0-9]{3}"/>
-                      </xs:restriction>
-                    </xs:simpleType>
-                  </xs:attribute>  
-                </xs:complexType>
-              </xs:element>
-              <xs:element name="bookinfo">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="title" type="xs:string" />
-                    <xs:element name="edition" type="xs:string" />
-                    <xs:element name="isbn" type="xs:unsignedInt" />
-                    <xs:element name="price" type="xs:decimal" />
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
+  <xs:element name="books" type="bookInformation" />
+
+  <xs:complexType name="bookInformation">
+    <xs:sequence>
+       <xs:element name="book" minOccurs="1" maxOccurs="unbounded" type="BookType" />
+    </xs:sequence>
+  </xs:complexType>  
+  
+  <xs:complexType name="BookType">
+    <xs:sequence>
+      <xs:element name="author" type="authorType" />
+      <xs:element  name="bookinfo" type="books_Type"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="authorType">
+    <xs:sequence>
+      <xs:element name="name" type="nameType" />
+      <xs:element name="contact" type="contactType" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="books_Type">
+    <xs:sequence>
+      <xs:element name="title" type="titleType" />
+      <xs:element name="edition" type="editionType" />
+      <xs:element name="isbn" type="isbnType" />
+      <xs:element name="price" type="priceType" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="nameType">
+    <xs:sequence>
+      <xs:element name="fname" type="fnameType" />
+      <xs:element name="lname" type="lnameType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="contactType">
+    <xs:sequence>
+      <xs:element name="email" type="emailType" />
+      <xs:element name="phone" type="phoneType" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="titleType">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
+  <xs:simpleType name="editionType">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
+
+  <xs:simpleType name="isbnType">
+    <xs:restriction base="xs:positiveInteger" />
+  </xs:simpleType>
+
+  <xs:simpleType name="priceType">
+    <xs:restriction base="xs:decimal"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="fnameType">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
+  <xs:simpleType name="lnameType">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
+
+  <xs:simpleType name="emailType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="phoneType" >
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{3}-[0-9]{7}" />
+     </xs:restriction>
+  </xs:simpleType>
 </xs:schema>
+
+
+  
