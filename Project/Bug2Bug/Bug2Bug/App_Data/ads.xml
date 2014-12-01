@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/Images/amazon.jpg</ImageUrl>
+    <NavigateUrl>http://www.amazon.com</NavigateUrl>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Images/ebay.jpeg</ImageUrl>
+    <NavigateUrl>http://www.ebay.com</NavigateUrl>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Images/macys.jpg</ImageUrl>
+    <NavigateUrl>http://www.macys.com</NavigateUrl>
+  </Ad>
+
+</Advertisements>

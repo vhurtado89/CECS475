@@ -20,6 +20,7 @@
       <xs:element name="name" type="nameType" />
       <xs:element name="contact" type="contactType" />
     </xs:sequence>
+    <xs:attribute name="auid" use="required" type="auIdType"/>
   </xs:complexType>
 
   <xs:complexType name="books_Type">
@@ -81,6 +82,11 @@
     <xs:restriction base="xs:string">
       <xs:pattern value="[0-9]{3}-[0-9]{7}" />
      </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name ="auIdType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{3}"/>
+    </xs:restriction>
   </xs:simpleType>
 </xs:schema>
 

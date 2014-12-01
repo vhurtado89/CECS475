@@ -1,0 +1,53 @@
+﻿.button {
+    height: auto;
+    width: 99% !important;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+}
+
+.button-advance {
+    background-color: #00ccff !important;
+    border-color: #00aacc !important;
+}
+
+.button-advance:hover {
+    background-color: #00bbdd !important;
+}
+
+.button-default {
+    background-color: #ffffff !important;
+    border-color: #d3d3d3 !important;
+}
+
+.button-default:hover {
+    background-color: #e3e3e3 !important;
+}
+
+.form-select {
+    width: 100% !important;
+}
+
+.page-container {
+    width: 100%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div-25 {
+    width: 25%;
+    float: left;
+}
+.div-50 {
+    width: 50%;
+    float: left;
+}
+.div-75 {
+    width: 75%;
+    float: left;
+}
+.div-100 {
+    width: 100%;
+    float: left;
+}
